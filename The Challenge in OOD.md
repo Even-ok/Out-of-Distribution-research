@@ -38,4 +38,34 @@
 
 ReAct： 探究了OOD对神经网络的影响，并提出截断式
 
+对score的改进（对损失函数的改进）：
+
+- **ReAct**： 探究了OOD对神经网络的影响，并提出截断式
+
 ![image-20221116114414547](assets/image-20221116114414547.png)
+
+
+
+- **Energy Regularized** : 双目标：一个是分类目标，用的是普通的交叉熵；一个是energy，用来尽可能地区分ID和OOD。
+
+![image-20221116214656212](assets/image-20221116214656212.png)
+
+
+
+------
+
+- VOS：采用生成样本式，生成一些outlier，为了robust detect! 
+
+![image-20221116215154028](assets/image-20221116215154028.png)
+
+
+
+- 关于分辨率的研究
+
+![image-20221116215440873](assets/image-20221116215440873.png)
+
+
+
+Summary:
+
+![image-20221116215653275](assets/image-20221116215653275.png)
