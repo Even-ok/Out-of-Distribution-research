@@ -53,3 +53,10 @@
 
     不符合train test scheme，包含所有的分布，而且会把占绝大多数的分布认为成ID。
 
+4. **对于OOD问题的一般方法：**
+
+- output-based method
+  - post-hoc: 计算出一个分数、能量，等等，进行划分。但模型训练过程可以不改变
+  - confidence enhancement: 隐变量的表示，更好建模density
+  - outlier exposure: 用一部分“外点”，在训练阶段让模型学习ID和OOD之间的差异。用outlier的方式能够获得更好的模型表现。常用方法：伪标签、ID过滤器等等。。
+  - 
